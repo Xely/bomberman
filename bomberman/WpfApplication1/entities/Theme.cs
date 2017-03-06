@@ -3,10 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using wpfBomberman.entities.bases;
 
-namespace WpfApplication1.entities
+namespace wpfBomberman.entities
 {
-    class Theme
+    public class Theme : BaseDBEntity
     {
+        private String backgroundImage;
+        private Color color;
+
+        public string BackgroundImage
+        {
+            get
+            {
+                return backgroundImage;
+            }
+
+            set
+            {
+                backgroundImage = value;
+                OnPropertyChanged("BackgroundImage");
+            }
+        }
+
+        public Color Color
+        {
+            get
+            {
+                return color;
+            }
+
+            set
+            {
+                color = value;
+                OnPropertyChanged("Color");
+            }
+        }
     }
 }

@@ -4,9 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApplication1.entities.base
+namespace wpfBomberman.entities.bases
 {
-    class BaseDBEntity
-{
-}
+    public class BaseDBEntity : BaseEntity
+    {
+        private Int32 id;
+
+        public Int32 Id
+        {
+            get { return id; }
+            set { id = value; OnPropertyChanged("Id"); }
+        }
+    }
 }
