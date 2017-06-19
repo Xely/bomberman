@@ -16,9 +16,7 @@ namespace wpfBomberman.database
     public class MySQLManager<TEntity> : DbContext where TEntity : class
     {
         Logger logger = new Logger("MySQLManagerLogger", LogMode.CURRENT_FOLDER, AlertMode.MESSAGE_BOX);
-        public MySQLManager()
-            : base(JsonManager.Instance.ReadFile<ConnectionString>(@"..\..\..\jsonconfig\", @"MysqlConfig.json").ToString())
-
+        public MySQLManager() : base(JsonManager.Instance.ReadFile<ConnectionString>(@"D:\Documents\Cours\c#\bomberman\jsonconfig\", @"MysqlConfig.json").ToString())
         {
             MySQLFullDB initDBIfNotExist = new MySQLFullDB();
         }
@@ -126,9 +124,3 @@ namespace wpfBomberman.database
         }
     }
 }
-
-/*public async Task<IEnumerable<TEntity>> CustomQuery(Criteria criteria)
-{
-    return await this.DbSetT.SqlQuery(criteria.MySQLCompute()).ToListAsync();
-}*/
-

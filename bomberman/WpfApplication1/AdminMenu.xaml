@@ -1,0 +1,28 @@
+﻿<Window x:Class="wpfBomberman.AdminMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfBomberman"
+        mc:Ignorable="d"
+        Title="AdminMenu" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnMap" Click="btnMap_Click" Content="Map"  Grid.Row="1" Grid.Column="1" />
+        <Button x:Name="btnNpc" Click="btnNpc_Click" Content="Npc"  Grid.Row="1" Grid.Column="2" />
+        <Button x:Name="btnTheme" Click="btnTheme_Click" Content="Theme"  Grid.Row="2" Grid.Column="0" />
+        <Button x:Name="btnWall" Click="btnWall_Click" Content="Wall"  Grid.Row="2" Grid.Column="2" />
+
+        
+    </Grid>
+</Window>

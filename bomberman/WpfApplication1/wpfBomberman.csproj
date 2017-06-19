@@ -76,7 +76,103 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Board.xaml.cs">
+      <DependentUpon>Board.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="viewmodel\BonusAdminVM.cs" />
+    <Compile Include="viewmodel\BonusTypeAdminVM.cs" />
+    <Compile Include="viewmodel\CharacterAdminVM.cs" />
+    <Compile Include="viewmodel\ColorAdminVM.cs" />
+    <Compile Include="viewmodel\MapAdminVM.cs" />
+    <Compile Include="viewmodel\NpcAdminVM.cs" />
+    <Compile Include="viewmodel\ThemeAdminVM.cs" />
+    <Compile Include="viewmodel\WallAdminVM.cs" />
+    <Compile Include="viewmodel\WelcomeMenuVM.cs" />
+    <Compile Include="WelcomeMenu.xaml.cs">
+      <DependentUpon>WelcomeMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\BonusAdmin.xaml.cs">
+      <DependentUpon>BonusAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\BonusTypeAdmin.xaml.cs">
+      <DependentUpon>BonusTypeAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\CharacterAdmin.xaml.cs">
+      <DependentUpon>CharacterAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\ColorAdmin.xaml.cs">
+      <DependentUpon>ColorAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\MapAdmin.xaml.cs">
+      <DependentUpon>MapAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\NpcAdmin.xaml.cs">
+      <DependentUpon>NpcAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\ThemeAdmin.xaml.cs">
+      <DependentUpon>ThemeAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\WallAdmin.xaml.cs">
+      <DependentUpon>WallAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\base\UserControlBase.cs" />
+    <Compile Include="views\usercontrols\BonusTypeUserControl.xaml.cs">
+      <DependentUpon>BonusTypeUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\BonusUserControl.xaml.cs">
+      <DependentUpon>BonusUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\CharacterUserControl.xaml.cs">
+      <DependentUpon>CharacterUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ColorUserControl.xaml.cs">
+      <DependentUpon>ColorUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ListBonusTypeUserControl.xaml.cs">
+      <DependentUpon>ListBonusTypeUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ListBonusUserControl.xaml.cs">
+      <DependentUpon>ListBonusUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ListCharacterUserControl.xaml.cs">
+      <DependentUpon>ListCharacterUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ListColorUserControl.xaml.cs">
+      <DependentUpon>ListColorUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ListMapUserControl.xaml.cs">
+      <DependentUpon>ListMapUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ListNpcUserControl.xaml.cs">
+      <DependentUpon>ListNpcUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ListThemeUserControl.xaml.cs">
+      <DependentUpon>ListThemeUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ListWallUserControl.xaml.cs">
+      <DependentUpon>ListWallUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\MapUserControl.xaml.cs">
+      <DependentUpon>MapUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\NpcUserControl.xaml.cs">
+      <DependentUpon>NpcUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\ThemeUserControl.xaml.cs">
+      <DependentUpon>ThemeUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\WallUserControl.xaml.cs">
+      <DependentUpon>WallUserControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Board.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WelcomeMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AdminMenu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -86,27 +182,128 @@
     </Compile>
     <Compile Include="commandworker\CommandWorker.cs" />
     <Compile Include="commandworker\ManualResetAction.cs" />
-    <Compile Include="database\entitieslink\MySQLMapManager.cs" />
+    <Compile Include="database\entitieslink\MySQLBonusManager.cs" />
+    <Compile Include="database\entitieslink\MySQLThemeManager.cs" />
+    <Compile Include="database\entitieslink\MySQLNpcManager.cs" />
     <Compile Include="database\MySQLFullDB.cs" />
     <Compile Include="database\MySQLManager.cs" />
     <Compile Include="entities\base\BaseDBEntity.cs" />
     <Compile Include="entities\base\BaseEntity.cs" />
-    <Compile Include="entities\Cell.cs" />
+    <Compile Include="entities\Bonus.cs" />
+    <Compile Include="entities\BonusType.cs" />
     <Compile Include="entities\Character.cs" />
     <Compile Include="entities\Color.cs" />
     <Compile Include="entities\ConnectionString.cs" />
     <Compile Include="entities\enums\Gender.cs" />
     <Compile Include="entities\json\JSonManager.cs" />
     <Compile Include="entities\Map.cs" />
+    <Compile Include="entities\Npc.cs" />
     <Compile Include="entities\Theme.cs" />
+    <Compile Include="entities\Wall.cs" />
     <Compile Include="logger\AlertMode.cs" />
     <Compile Include="logger\Logger.cs" />
     <Compile Include="logger\Logger2.cs" />
     <Compile Include="logger\LogMode.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="AdminMenu.xaml.cs">
+      <DependentUpon>AdminMenu.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="views\admin\BonusAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\admin\BonusTypeAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\admin\CharacterAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\admin\ColorAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\admin\MapAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\admin\NpcAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\admin\ThemeAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\admin\WallAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\BonusTypeUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\BonusUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\CharacterUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ColorUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ListBonusTypeUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ListBonusUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ListCharacterUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ListColorUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ListMapUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ListNpcUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ListThemeUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ListWallUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\MapUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\NpcUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\ThemeUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\WallUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -137,9 +334,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="viewmodel\" />
-    <Folder Include="views\admin\" />
-    <Folder Include="views\usercontrols\" />
+    <Resource Include="images\bomb2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\robot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bomb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\wall2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\undes_wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\robot_nobg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

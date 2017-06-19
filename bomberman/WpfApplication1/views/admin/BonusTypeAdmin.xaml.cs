@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace wpfBomberman
+namespace wpfBomberman.views.admin
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for BonusTypeAdmin.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class BonusTypeAdmin : Page
     {
-        public MainWindow()
+        public BonusTypeAdmin()
         {
             InitializeComponent();
         }

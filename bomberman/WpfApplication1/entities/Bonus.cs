@@ -7,12 +7,12 @@ using wpfBomberman.entities.bases;
 
 namespace wpfBomberman.entities
 {
-    public class Cell : BaseDBEntity
+    public class Bonus : BaseDBEntity
     {
         private int xCoor;
         private int yCoor;
-        private Boolean isAWall;
-        private Map map;
+        private BonusType bonusType;
+        private int value;
 
         public int XCoor
         {
@@ -42,31 +42,31 @@ namespace wpfBomberman.entities
             }
         }
 
-        public Boolean IsAWall
+        public BonusType BonusType
         {
             get
             {
-                return isAWall;
+                return bonusType;
             }
 
             set
             {
-                isAWall = value;
-                OnPropertyChanged("IsAWall");
+                bonusType = value;
+                OnPropertyChanged("BonusType");
             }
         }
 
-        public Map Map
+        public int Value
         {
             get
             {
-                return map;
+                return value;
             }
 
             set
             {
-                map = value;
-                OnPropertyChanged("Map");
+                this.value = value;
+                OnPropertyChanged("Value");
             }
         }
     }

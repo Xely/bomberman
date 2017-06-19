@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using wpfBomberman.database;
 using wpfBomberman.database.entitieslinks;
 using wpfBomberman.entities;
 using wpfBomberman.entities.enums;

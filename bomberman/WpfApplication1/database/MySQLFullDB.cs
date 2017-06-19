@@ -13,13 +13,16 @@ namespace wpfBomberman.database
     [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class MySQLFullDB : DbContext
     {
-        public DbSet<Theme> ThemeTable { get; set; }
-        public DbSet<Map> MapTable { get; set; }
-        public DbSet<Cell> CellTable { get; set; }
+        public DbSet<Bonus> BonusTable { get; set; }
+        public DbSet<BonusType> BonusTypeTable { get; set; }
         public DbSet<Character> CharacterTable { get; set; }
         public DbSet<Color> ColorTable { get; set; }
+        public DbSet<Map> MapTable { get; set; }
+        public DbSet<Npc> NpcTable { get; set; }
+        public DbSet<Theme> ThemeTable { get; set; }
+        public DbSet<Wall> WallTable { get; set; }
 
-        public MySQLFullDB() : base(JsonManager.Instance.ReadFile<ConnectionString>(@"..\..\..\jsonconfig\", @"MysqlConfig.json").ToString())
+        public MySQLFullDB() : base(JsonManager.Instance.ReadFile<ConnectionString>(@"D:\Documents\Cours\c#\bomberman\jsonconfig\", @"MysqlConfig.json").ToString())
         {
             InitLocalMySQL();
         }
